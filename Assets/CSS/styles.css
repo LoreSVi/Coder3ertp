@@ -1,0 +1,42 @@
+body {
+    margin: 0px;
+}
+/*navbar*/
+.nav-container {
+    position: sticky;
+    z-index: 3;
+    top:0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 12vh;
+ background-color: rgb(206, 12, 164);
+}
+
+.navbar-logo {
+    justify-self: start;
+    margin-left: 20px;
+    color:bisque;
+    margin-top: 4vh;
+    cursor: pointer;
+}
+
+.ver-carrito {
+    font-size: 25px;
+    margin-right: 20px;
+    margin-top: 3.5vh;
+    cursor: pointer;
+}
+
+.banner {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-image: linear-gradient(90deg, rgba(236,160,205,1) 0%, rgba(221,162,169,1) 30%, rgba(191,131,223,1) 50%, rgba(226,121,171,1) 80%, rgba(244,218,214,1) 100%);
+}
+.imagen-fondo {
+    background-size: cover;
+    display: flex;
+    height: 100%;
+}
