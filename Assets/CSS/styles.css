@@ -38,27 +38,72 @@ body {
     background-size: cover;
     background-position: center;
     height: 100vh;
-    background-image: linear-gradient(90deg, rgba(236,160,205,1) 0%, rgba(221,162,169,1) 30%, rgba(191,131,223,1) 50%, rgba(226,121,171,1) 80%, rgba(244,218,214,1) 100%), 
-    url("https://i.ytimg.com/vi/QG79v_GRccc/maxresdefault.jpg");
+    background-image: url("https://i.ytimg.com/vi/QG79v_GRccc/maxresdefault.jpg");
 } 
 
 
 .banner-container {
-    text-align: center;
-    padding: 15% 0;
+    text-align: right;
+    padding: 8% 0;
+    margin-right: 230px;
 }
 
 .baner h1{
-    margin: 0;
-    color: white;
-    text-shadow: 1px 1px 3px black;
-    font-size: 62px;
+    margin: 0px;
+    color: rgb(220, 28, 220);
+    text-shadow: 1px 1px 3px rgba(196, 15, 196, 0.2);
+    font-size: 200px;
     font-weight: bold;
+    text-align: right;
 }
 
 .banner p {
-    font-size: 30px;
-    color: white;
+    font-size: 130px;
+    color: rgb(214, 9, 9);
     opacity: 0.7;
-    text-shadow: 1px 1px 3 px black;
+    font-weight: bold;
+}
+
+.shop-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: rgba(108, 117, 244, 0.751);
+}
+
+.card > img {
+    width: 90%;
+    height: 250px;
+}
+
+.price {
+    color: rgb(178, 228, 37);
+    font-size: 22px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:hover{
+    opacity: 0.7;
 }
