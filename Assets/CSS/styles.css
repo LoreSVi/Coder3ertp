@@ -107,3 +107,58 @@ body {
 .card button:hover{
     opacity: 0.7;
 }
+
+/*modal estilos*/
+.modal-container {
+    width: 50%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10%;
+    max-height: 50vh;
+    color:antiquewhite;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    scrollbar-color: none;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: antiquewhite;
+    width: 70%;
+}
+
+.modal-header-title {
+    justify-self: start;
+}
+
+.modal-header-button {
+    cursor: pointer;
+}
+
+.modal-container > .modal-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    margin: 8px;
+}
+
+.modal-contair > div > img {
+    height: 40px;
+    width: 40px;
+}
+
+.total-content {
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+

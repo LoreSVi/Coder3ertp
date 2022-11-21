@@ -48,8 +48,8 @@ modalHeader.append(modalbutton);
 
 carrito.forEach((product) => {
 let carritoContent = document.createElement("div");
-carrito.className = "modal-content";
-carrito.innerHTML = `
+carritoContent.className = "modal-content";
+carritoContent.innerHTML = `
 <img src="${product.img}">
     <h3>${product.nombre}</h3>
     <p> class="price">${product.precio} $</p>
@@ -65,3 +65,4 @@ carrito.innerHTML = `
   totalCompra.innerHTML =  `total a pagar: ${total}$`;
   modalContainer.append(totalCompra);
 });
+
