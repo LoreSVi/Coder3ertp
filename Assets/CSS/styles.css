@@ -88,8 +88,8 @@ body {
 }
 
 .price {
-    color: rgb(178, 228, 37);
-    font-size: 22px;
+    color: rgb(78, 37, 228);
+    font-size: 20px;
 }
 
 .card button {
@@ -110,14 +110,14 @@ body {
 
 /*modal estilos*/
 .modal-container {
-    width: 50%;
-    background-color: black;
+    width: 40%;
+    background-color: rgb(245, 218, 218);
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 10%;
+    margin: 10 10%;
     max-height: 50vh;
-    color:antiquewhite;
+    color:rgb(162, 110, 31);
     position: fixed;
     overflow: auto;
     z-index: 9;
@@ -128,9 +128,9 @@ body {
 .modal-header {
     display: flex;
     justify-content: space-around;
-    background-color: black;
+    background-color: rgb(163, 33, 33);
     color: antiquewhite;
-    width: 70%;
+    width: 100%;
 }
 
 .modal-header-title {
@@ -150,9 +150,9 @@ body {
     margin: 8px;
 }
 
-.modal-contair > div > img {
-    height: 40px;
-    width: 40px;
+.modal-container > div > img {
+    height: 110px;
+    width: 110px;
 }
 
 .total-content {
