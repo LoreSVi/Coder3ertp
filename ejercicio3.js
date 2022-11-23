@@ -1,15 +1,17 @@
-const formulario = document.getElementById('formPrincipal');
-const nombreInput = document.getElementById('nombre');
-const apellidoInput = document.getElementById('apellido');
+const inputNombre = document.getElementById('nombre');
+const inputApellido = document.getElementById('apellido');
+const botonDatos = document.getElementById('botonDatos')
 
-const infoUsuario = {}
-formulario.onsubmit = (event) => {
-    event.preventDefault()
-    infoUsuario['nombreUsuario'] = nombreInput.value
-    infoUsuario['apellidoUsuario'] = apellidoInput.value
-    console.log(infoUsuario)
-    const infoUsuarioJSON = JSON.stringify(infoUsuario)
-    localStorage.setItem('usuario', infoUsuarioJSON)
+botonDatos.onclick = () => {
+const usuario = {
+    nombre: inputNombre.value,
+    apellido: inputApellido.value
+}
+inputNombre.value = ''
+inputApellido.value = ''
+console.log(usuario)
+
+localStorage.setItem('InfoUsuario',JSON.stringify(usuario))
 }
 
 
@@ -48,7 +50,7 @@ productos.forEach((product) => {
 });
 
 verCarrito.addEventListener("click", () => {
-
+modalContainer.innerHTML = '';
 const modalHeader = document.createElement("div");
 modalHeader.className = "modal-header"
 modalHeader.innerHTML = 
@@ -59,6 +61,10 @@ modalContainer.append(modalHeader);
 const modalbutton = document.createElement("h1");
 modalbutton.innerText = "x";
 modalbutton.className = "modal-header-button";
+
+modalbutton.addEventListener('click', () => {
+    modalContainer.style.display = 'none';
+});
 
 modalHeader.append(modalbutton);
 
