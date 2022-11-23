@@ -1,3 +1,19 @@
+const formulario = document.getElementById('formPrincipal');
+const nombreInput = document.getElementById('nombre');
+const apellidoInput = document.getElementById('apellido');
+
+const infoUsuario = {}
+formulario.onsubmit = (event) => {
+    event.preventDefault()
+    infoUsuario['nombreUsuario'] = nombreInput.value
+    infoUsuario['apellidoUsuario'] = apellidoInput.value
+    console.log(infoUsuario)
+    const infoUsuarioJSON = JSON.stringify(infoUsuario)
+    localStorage.setItem('usuario', infoUsuarioJSON)
+}
+
+
+
 const shopContent = document.getElementById("shopContent");
 const verCarrito = document.getElementById("verCarrito");
 const modalContainer = document.getElementById("modal-container");
